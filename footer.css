@@ -1,0 +1,21 @@
+footer {
+  padding: 38px max(24px, 8vw);
+  gap: 32px;
+  font-size: 15px;
+}
+
+footer img { width: 185px; height: 66px; }
+
+footer address {
+  font-style: normal;
+  display: grid;
+  gap: 6px;
+  text-align: right;
+  color: #31595a;
+  line-height: 1.35;
+}
+
+footer address strong { font-size: 17px; color: var(--ink); }
+footer address a { color: var(--ink); font-weight: 700; text-decoration: none; }
+
+@media (max-width: 760px) { footer address { text-align: left; } }
