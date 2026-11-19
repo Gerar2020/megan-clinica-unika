@@ -10,6 +10,7 @@
     <title>MEGAN 448 kHz | Clínica Unika Madrid</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="video.css" />
   </head>
   <body>
     <header class="site-header">
@@ -56,9 +57,12 @@
 
       <section class="video-section" aria-labelledby="video-title">
         <div class="video-copy"><p class="eyebrow">Una sesión, tres tecnologías</p><h2 id="video-title">Descubre la experiencia MEGAN.</h2><p>La tecnología se pone al servicio de una piel visiblemente más cuidada.</p></div>
-        <video id="megan-video" controls playsinline preload="metadata" poster="assets/hero-megan.jpg">
-          Tu navegador no puede reproducir este vídeo.
-        </video>
+        <div class="video-frame">
+          <video id="megan-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-megan.jpg">
+            Tu navegador no puede reproducir este vídeo.
+          </video>
+          <button class="sound-toggle" type="button" aria-pressed="false">Activar sonido</button>
+        </div>
       </section>
 
       <section class="offer" aria-labelledby="offer-title">

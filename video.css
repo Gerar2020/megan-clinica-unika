@@ -1,0 +1,15 @@
+.video-frame { position: relative; }
+.video-frame video { aspect-ratio: 9 / 16; object-fit: cover; }
+.sound-toggle {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  border: 1px solid rgba(255,255,255,.8);
+  background: rgba(20,60,61,.84);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  padding: 11px 14px;
+  cursor: pointer;
+}
+.sound-toggle[aria-pressed="true"] { background: #a9d2d6; color: #143c3d; }

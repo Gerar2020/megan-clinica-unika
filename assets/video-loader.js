@@ -7,4 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const bytes = new Uint8Array(raw.length);
   for (let i = 0; i < raw.length; i += 1) bytes[i] = raw.charCodeAt(i);
   video.src = URL.createObjectURL(new Blob([bytes], { type: "video/mp4" }));
+  video.play().catch(() => {});
+
+  const soundToggle = document.querySelector(".sound-toggle");
+  soundToggle?.addEventListener("click", () => {
+    video.muted = !video.muted;
+    soundToggle.setAttribute("aria-pressed", String(!video.muted));
+    soundToggle.textContent = video.muted ? "Activar sonido" : "Sonido activado";
+    video.play().catch(() => {});
+  });
 });
