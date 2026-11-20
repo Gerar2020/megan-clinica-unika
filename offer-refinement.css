@@ -1,6 +1,6 @@
 .hero-visual {
   background:
-    linear-gradient(90deg, rgba(246,244,239,.72) 0%, rgba(246,244,239,.42) 28%, rgba(246,244,239,.06) 48%, rgba(246,244,239,0) 60%),
+    linear-gradient(90deg, rgba(246,244,239,.62) 0%, rgba(246,244,239,.30) 28%, rgba(246,244,239,0) 48%, rgba(246,244,239,0) 56%),
     url('assets/hero-megan.jpg') 66% center/cover no-repeat;
 }
 
@@ -18,11 +18,11 @@
 }
 
 .offer-includes img {
-  width: 112px;
-  height: 112px;
-  object-fit: cover;
+  width: 132px;
+  height: 132px;
+  object-fit: contain;
   flex: 0 0 auto;
-  background: #fff;
+  background: transparent;
 }
 
 .offer-includes p {
@@ -36,10 +36,10 @@
 @media (max-width: 760px) {
   .hero-visual {
     background:
-      linear-gradient(180deg, rgba(246,244,239,.68) 0%, rgba(246,244,239,.35) 37%, rgba(246,244,239,.02) 66%),
+      linear-gradient(180deg, rgba(246,244,239,.60) 0%, rgba(246,244,239,.25) 37%, rgba(246,244,239,0) 66%),
       url('assets/hero-megan.jpg') 56% center/cover no-repeat;
   }
   .offer-includes { align-items: flex-start; gap: 14px; padding: 14px; }
-  .offer-includes img { width: 88px; height: 88px; }
+  .offer-includes img { width: 98px; height: 98px; }
   .offer-includes p { font-size: 14px !important; }
 }
