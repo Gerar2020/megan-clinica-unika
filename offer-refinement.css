@@ -1,6 +1,6 @@
 .hero-visual {
   background:
-    linear-gradient(90deg, rgba(246,244,239,.82) 0%, rgba(246,244,239,.58) 28%, rgba(246,244,239,.10) 48%, rgba(246,244,239,0) 62%),
+    linear-gradient(90deg, rgba(246,244,239,.72) 0%, rgba(246,244,239,.42) 28%, rgba(246,244,239,.06) 48%, rgba(246,244,239,0) 60%),
     url('assets/hero-megan.jpg') 66% center/cover no-repeat;
 }
 
@@ -36,7 +36,7 @@
 @media (max-width: 760px) {
   .hero-visual {
     background:
-      linear-gradient(180deg, rgba(246,244,239,.78) 0%, rgba(246,244,239,.48) 37%, rgba(246,244,239,.03) 66%),
+      linear-gradient(180deg, rgba(246,244,239,.68) 0%, rgba(246,244,239,.35) 37%, rgba(246,244,239,.02) 66%),
       url('assets/hero-megan.jpg') 56% center/cover no-repeat;
   }
   .offer-includes { align-items: flex-start; gap: 14px; padding: 14px; }
