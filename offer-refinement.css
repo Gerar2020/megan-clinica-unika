@@ -33,6 +33,42 @@
 
 .offer-includes strong { color: var(--aqua); }
 
+.hero-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 0;
+  font-size: 18px;
+  color: var(--ink);
+}
+
+.hero-price del { opacity: .68; }
+.hero-price strong { font-size: 34px; color: var(--deep); letter-spacing: -.06em; }
+.hero-price span,
+.discount-badge {
+  padding: 5px 9px;
+  background: var(--deep);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.previous-price {
+  font-size: 22px;
+  text-decoration: line-through;
+  opacity: .72;
+}
+
+.price .discount-badge { vertical-align: middle; margin-left: 12px; }
+
+.offer-summary {
+  width: min(530px, 100%);
+  margin: 24px auto 0 !important;
+  font-size: 18px !important;
+  line-height: 1.45;
+}
+
 @media (max-width: 760px) {
   .hero-visual {
     background:
@@ -42,4 +78,6 @@
   .offer-includes { align-items: flex-start; gap: 14px; padding: 14px; }
   .offer-includes img { width: 98px; height: 98px; }
   .offer-includes p { font-size: 14px !important; }
+  .hero-price strong { font-size: 30px; }
+  .offer-summary { font-size: 16px !important; }
 }

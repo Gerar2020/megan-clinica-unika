@@ -22,7 +22,7 @@
     fbq("init", pixelId);
     fbq("track", "PageView");
     document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
-      link.addEventListener("click", () => fbq("track", "Contact", { content_name: "Reserva MEGAN Experience 80 €" }));
+      link.addEventListener("click", () => fbq("track", "Contact", { content_name: "Primera sesión MEGAN 3 en 1 · 45 €" }));
     });
   }
 
