@@ -111,6 +111,33 @@
   line-height: 1.45;
 }
 
+/* Oferta de captación: contraste deliberadamente alto sobre la fotografía. */
+.hero-copy .hero-offer {
+  display: flex !important;
+  background: #9dcfd4 !important;
+  border: 3px solid #0d4647 !important;
+  color: #073c3d !important;
+  opacity: 1 !important;
+}
+
+.hero-copy .hero-offer-prices strong {
+  display: inline-block !important;
+  color: #073c3d !important;
+  font-weight: 800 !important;
+}
+
+.hero-copy .hero-offer-prices del {
+  color: #073c3d !important;
+  font-weight: 700 !important;
+}
+
+.hero-copy .hero-offer-prices b {
+  display: inline-block !important;
+  background: #073c3d !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+
 @media (max-width: 760px) {
   .hero-visual {
     background:
