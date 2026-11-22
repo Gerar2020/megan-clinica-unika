@@ -33,17 +33,53 @@
 
 .offer-includes strong { color: var(--aqua); }
 
-.hero-price {
+.hero-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: min(360px, 100%);
+  margin: 22px 0 22px;
+  padding: 14px 18px 13px;
+  background: rgba(169, 210, 214, .94);
+  color: var(--deep);
+  box-shadow: 0 12px 28px rgba(9, 58, 59, .14);
+}
+
+.hero-offer-label,
+.hero-offer-limit {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .14em;
+}
+
+.hero-offer-prices {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 24px 0 0;
-  font-size: 18px;
-  color: var(--ink);
+  margin: 7px 0 5px;
 }
 
-.hero-price del { opacity: .68; }
-.hero-price strong { font-size: 34px; color: var(--deep); letter-spacing: -.06em; }
+.hero-offer-prices del {
+  font-size: 21px;
+  font-weight: 600;
+  opacity: .72;
+}
+
+.hero-offer-prices strong {
+  font-size: 64px;
+  line-height: .84;
+  letter-spacing: -.08em;
+}
+
+.hero-offer-prices b {
+  padding: 7px 8px;
+  background: var(--deep);
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .03em;
+}
+
 .hero-price span,
 .discount-badge {
   padding: 5px 9px;
@@ -62,6 +98,12 @@
 
 .price .discount-badge { vertical-align: middle; margin-left: 12px; }
 
+.hero .button.primary {
+  min-width: 310px;
+  padding: 19px 24px;
+  font-size: 19px;
+}
+
 .offer-summary {
   width: min(530px, 100%);
   margin: 24px auto 0 !important;
@@ -78,6 +120,8 @@
   .offer-includes { align-items: flex-start; gap: 14px; padding: 14px; }
   .offer-includes img { width: 98px; height: 98px; }
   .offer-includes p { font-size: 14px !important; }
-  .hero-price strong { font-size: 30px; }
+  .hero-offer { width: min(340px, 100%); margin: 18px 0 20px; }
+  .hero-offer-prices strong { font-size: 58px; }
+  .hero .button.primary { width: 100%; min-width: 0; font-size: 18px; }
   .offer-summary { font-size: 16px !important; }
 }
