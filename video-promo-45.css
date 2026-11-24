@@ -1,0 +1,7 @@
+.megan-film{display:grid;grid-template-columns:1fr minmax(260px,380px);gap:48px;align-items:center;padding:64px max(24px,8vw);background:#edf5f4;color:#143c3d}
+.megan-film-copy{max-width:600px}.megan-film-copy h2{font-size:clamp(30px,4vw,52px);line-height:1.1;margin:16px 0 24px}.megan-film-copy p{font-size:18px;line-height:1.6}
+.film-offer strong{font-size:36px}.film-offer span{display:block;font-size:16px}.megan-film-player{width:100%;max-width:380px;justify-self:center}
+.megan-film-player video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#143c3d;border-radius:10px}
+.film-controls{display:flex;gap:10px;margin-top:12px}.film-controls button{flex:1;border:1px solid #143c3d;border-radius:6px;padding:12px 8px;background:#fff;color:#143c3d;font:inherit;font-size:16px;font-weight:700;cursor:pointer}
+.film-controls button:focus-visible{outline:3px solid #24858a;outline-offset:3px}
+@media(max-width:720px){.megan-film{grid-template-columns:1fr;gap:28px;padding:40px 24px}.megan-film-player{max-width:320px}.megan-film-copy h2{font-size:32px}}
